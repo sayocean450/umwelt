@@ -1,0 +1,46 @@
+.book-card {
+  @include col100(18px 24px 24px 24px, row);
+  font: $fontMain;
+  color: $black;
+  border-bottom: 1px solid darken($white, 10%);
+  
+  @include respond(mobile) {
+    @include col100(8px, column);
+  }
+
+  &:hover {
+    background-color: darken($white, 3%);
+    transition: 0.2s;
+  }
+  
+  &__name {
+    @include col50(0);
+    
+    @include respond(mobile) {
+      @include col100(0);
+    }
+    
+    h3 {
+      margin: 0;
+    }
+  }
+  
+  &__description {
+    @include col50(0);
+    
+    @include respond(mobile) {
+      @include col100(12px 0);
+      color: $black;
+    }
+  }
+  
+  &__links {
+    @include col15(0 0 0 0, column);
+    align-items: flex-end;
+    
+    @include respond(mobile) {
+      @include col100(12px 0 0 0, column);
+      align-items: flex-end;
+    }
+  }
+}

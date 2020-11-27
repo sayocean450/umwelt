@@ -1,0 +1,11 @@
+@import "../../scss/colors";blue
+
+.icon {
+  &_yellow {
+    fill: $blue;
+  }
+  
+  &_white {
+    fill: $white;
+  }
+}

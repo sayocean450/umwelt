@@ -1,0 +1,20 @@
+include ../../components/head/head
+include ../../components/header/header
+
+include ../../components/list-header/list-header
+include ../../components/book-card/book-card
+doctype html(prefix="og: http://ogp.me/ns#")
+html
+    +head(
+      'артём сошников',
+      'пишу и обозреваю прозу, веду телеграм-канал о реализме «чернотроп»',
+      'http://soshnikov-writing.art/img/default.jpg',
+      ''
+    )
+body
+    +header()
+    div#index
+        div#writing
+            +bookCard('В каждый город, в каждом книжном', '«Слово пацана» Роберта Гараева', 'garaev-chavs.html')
+            +bookCard('Балет рабочего класса', '«Что мы думаем, когда мы думаем о футболе» Саймона Кричли', 'misfortunes.html')
+

@@ -1,0 +1,40 @@
+@import "colors";
+
+$fontExtraLarge: 48px/56px "EB Garamond", 'PT Serif', Georgia, serif;
+$fontLarge: 32px/40px "EB Garamond", 'PT Serif', Georgia, serif;
+$fontMain: 24px/32px "EB Garamond", 'PT Serif', Georgia, serif;
+$fontSmall: 20px/28px "EB Garamond", 'PT Serif', Georgia, serif;
+
+a {
+  text-decoration: none;
+  color: $blue;
+}
+
+h1 {
+  font: $fontExtraLarge;
+  margin: 0;
+  
+  @include respond(mobile) {
+    font: $fontLarge;
+  }
+}
+
+h2 {
+  font: $fontLarge;
+  margin: 0;
+}
+
+h5 {
+  font: $fontSmall;
+  letter-spacing: 1px;
+  margin: 0 0 4px 0;
+  text-transform: uppercase;
+}
+
+blockquote {
+  color: darken($blue, 10%);
+  
+  @include respond(mobile) {
+    margin: 4px 12px;
+  }
+}

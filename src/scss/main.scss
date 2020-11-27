@@ -1,0 +1,34 @@
+@import "grid";
+@import "colors";
+@import "typo";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 80px 32px 32px 32px;
+  margin: 0;
+  background-color: $white;
+  
+  @include respond(mobile) {
+    padding: 80px 24px 24px 24px;
+    height: 100vh;
+  }
+}
+
+p {
+  margin: 0 0 32px 0;
+  
+  @include respond(mobile) {
+    margin: 0 0 24px 0;
+  }
+}
+
+.content {
+  @include col100(72px 0 0 0, column, flex-start, center);
+  
+  @include respond(mobile) {
+    @include col100(0, column, flex-start, center);
+  }
+}
