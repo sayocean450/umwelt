@@ -4,12 +4,18 @@ include ../../components/article-headline/article-headline
 include ../../components/article-breadcrumb/article-breadcrumb
 
 - var id = 'critchley-dead-sophists'
+- var author = 'Саймон Кричли'
+- var authorLink = 'https://en.wikipedia.org/wiki/Simon_Critchley'
+- var title = 'Книга мёртвых философов'
+- var publisher = 'Рипол Классик, 2017. 448 с. Переводчик Павел Миронов'
+- var headline = 'Страх неизбежен'
+- var desc = 'О труде Саймона Кричли, желающего преодолеть страх смерти'
 
 doctype html
 html
     +head(
-      'Страх неизбежен',
-      'О труде Саймона Кричли, желающего преодолеть страх смерти',
+      `${headline}`,
+      `${desc}`,
       `http://umwelt-books.ru/img/${id}-og.jpg`,
       'article'
     )
@@ -19,11 +25,14 @@ body.body_light
         div.article
             div.article__text
                 include:markdown-it(plugins=['markdown-it-attrs']) ../../../node_modules/soshnikov-writing/publications/umwelt/site/critchley-dead-sophists.md
-            dic.article__data
+            div.article__data
                 figure
                     img(src=`http://umwelt-books.ru/img/${id}-cover.jpg`)
                     figcaption 
                         p 
-                            a(href="https://en.wikipedia.org/wiki/Simon_Critchley") Саймон Кричли
-                        p «Книга мёртвых философов»
-                        p Рипол Классик, 2017. 448 с. Переводчик Павел Миронов
+                            a(href=`${authorLink}`)=`${author}`
+                        p 
+                        |«
+                        =`${title}`
+                        |»
+                        p=`${publisher}`

@@ -33,6 +33,7 @@ h5 {
 
 blockquote {
   color: darken($blue, 10%);
+  margin: 0;
   
   @include respond(mobile) {
     margin: 4px 12px;

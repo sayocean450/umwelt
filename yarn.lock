@@ -2600,9 +2600,9 @@ ee-first@1.1.1:
   integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
 
 electron-to-chromium@^1.3.612:
-  version "1.3.620"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.620.tgz#c6f36a7e398acc9d7d12743a6f58d536fbc58700"
-  integrity sha512-YbgWXUR2Mu+Fp6rm3GZ5YJdNo8SgZKLUTNSl2PNvdOcM8OIz07jRJnRkIaV9vdszFv9UUuGChh19w9qSuoLJgw==
+  version "1.3.621"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.621.tgz#0bbe2100ef0b28f88d0b1101fbdf433312f69be0"
+  integrity sha512-FeIuBzArONbAmKmZIsZIFGu/Gc9AVGlVeVbhCq+G2YIl6QkT0TDn2HKN/FMf1btXEB9kEmIuQf3/lBTVAbmFOg==
 
 elliptic@^6.5.3:
   version "6.5.3"
@@ -6372,9 +6372,9 @@ sockjs@0.3.20:
     websocket-driver "0.6.5"
 
 soshnikov-writing@^1.0.21:
-  version "1.1.36"
-  resolved "https://registry.yarnpkg.com/soshnikov-writing/-/soshnikov-writing-1.1.36.tgz#e685666409d7144e972f8a5956c5aed58f5abfc0"
-  integrity sha512-sazcm/pzfOtIJGg28UepYbWaEaLuqJSkVXOddw7NT9FhKJpPCUjUobjFN1fk4UXHRHVqNWL/C3giFqGv/z3AGw==
+  version "1.1.37"
+  resolved "https://registry.yarnpkg.com/soshnikov-writing/-/soshnikov-writing-1.1.37.tgz#54f5cfe1b1033fcdb84350446097b3c7509569ab"
+  integrity sha512-gtz4WUdegwhSE42T2yCxPbZgSJEuFrQcuGNIkBCXfZY91wNKMvy2sMr2ZJkFWVR9g+Uubd+yrgJFLrUvi2tg2A==
 
 source-list-map@^2.0.0:
   version "2.0.1"
