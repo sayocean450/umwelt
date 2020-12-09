@@ -31,6 +31,10 @@
   grid-row-start: 2;
   
   @include col100(72px 0 0 0, column);
+
+  @include respond(mobile) {
+    @include col100(0 0 0 0, column);
+  }
 }
 
 .writing {

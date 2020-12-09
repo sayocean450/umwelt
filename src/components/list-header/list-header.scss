@@ -5,7 +5,7 @@
 .list-header {
   @include col100(0 0 32px 0, row);
   word-break: break-word;
-  color: $white;
+  color: $black;
   
   @include respond(mobile) {
     @include col100(0 0 24px 0, row);

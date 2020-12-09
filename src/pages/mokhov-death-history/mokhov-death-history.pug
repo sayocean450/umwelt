@@ -3,13 +3,13 @@ include ../../components/header/header
 include ../../components/article-headline/article-headline
 include ../../components/article-breadcrumb/article-breadcrumb
 
-- var id = 'garaev-chavs'
-- var author = 'Роберт Гараев'
-- var authorLink = 'https://individuumbooks.ru/authors/robert_garaev/'
-- var title = 'Слово пацана. Криминальный Татарстан 1970-2010-х'
-- var publisher = 'Individuum, 2020, 624 с.'
-- var headline = 'В каждый город, в каждом книжном'
-- var desc = '«Слово пацана» Роберта Гараева — тот случай, когда острая тема перевешивает и огрехи структуры, и мозаичность повествования, и вообще всё'
+- var id = 'mokhov-death-history'
+- var author = 'Сергей Мохов'
+- var authorLink = 'https://individuumbooks.ru/authors/sergej_mohov/'
+- var title = 'История смерти. Как мы боремся и принимаем'
+- var publisher = 'Individuum, 2020, 232 с.'
+- var headline = 'Расщепление смерти'
+- var desc = 'Сергей Мохов снова написал книгу о смерти — и на этот раз её важность оценят не только знакомые с death studies читатели. По-хорошему, «Историю смерти» стоит прочесть каждому'
 
 doctype html
 html
@@ -24,7 +24,7 @@ body.body_light
     div.content
         div.article
             div.article__text
-                include:markdown-it(plugins=['markdown-it-attrs']) ../../../node_modules/soshnikov-writing/publications/umwelt/site/garaev-chavs.md
+                include:markdown-it(plugins=['markdown-it-attrs']) ../../../node_modules/soshnikov-writing/publications/umwelt/site/mokhov-death-history.md
             div.article__data
                 figure
                     img(src=`http://umwelt-books.ru/img/${id}-cover.jpg`)

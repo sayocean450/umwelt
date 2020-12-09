@@ -1,0 +1,29 @@
+include ../../components/head/head
+include ../../components/header/header
+include ../../components/article-headline/article-headline
+include ../../components/article-breadcrumb/article-breadcrumb
+
+- var id = 'critchley-football'
+
+doctype html
+html
+    +head(
+      'Балет рабочего класса',
+      'Об актуальном эссе Саймона Кричли, в котором философ пытается докопаться до сути популярности футбола',
+      `http://umwelt-books.ru/img/${id}-og.jpg`,
+      'article'
+    )
+body.body_light
+    +header('mini')
+    div.content
+        div.article
+            div.article__text
+                include:markdown-it(plugins=['markdown-it-attrs']) ../../../node_modules/soshnikov-writing/publications/umwelt/site/critchley-football.md
+            dic.article__data
+                figure
+                    img(src=`http://umwelt-books.ru/img/${id}-cover.jpg`)
+                    figcaption 
+                        p 
+                            a(href="https://en.wikipedia.org/wiki/Simon_Critchley") Саймон Кричли
+                        p «О чем мы думаем, когда думаем о футболе»
+                        p КоЛибри, 2018, 208 стр.

@@ -6,15 +6,20 @@ include ../../components/book-card/book-card
 doctype html(prefix="og: http://ogp.me/ns#")
 html
     +head(
-      'артём сошников',
-      'пишу и обозреваю прозу, веду телеграм-канал о реализме «чернотроп»',
+      'umwelt',
+      'читательский дневник о нехудожественной литературе, посвящённой проблемам современности',
       'http://soshnikov-writing.art/img/default.jpg',
       ''
     )
 body
-    +header()
+    +header('')
     div#index
         div#writing
             +bookCard('В каждый город, в каждом книжном', '«Слово пацана» Роберта Гараева', 'garaev-chavs.html')
-            +bookCard('Балет рабочего класса', '«Что мы думаем, когда мы думаем о футболе» Саймона Кричли', 'misfortunes.html')
-
+            +bookCard('Ревью в квадрате', '«Logos Review of Books», №1', 'lrb-01.html')
+            +bookCard('Расщепление смерти', '«История смерти» Сергея Мохова', 'mokhov-death-history.html')
+            +bookCard('Балет рабочего класса', '«Что мы думаем, когда мы думаем о футболе» Саймона Кричли', 'critchley-football.html')
+            +bookCard('Страх неизбежен', '«Книга мёртвых философов» Саймона Кричли', 'critchley-dead-sophists.html')
+            +bookCard('Такие выборы нам не нужны', '«Против выборов» Давид ван Рейбрука', 'van-reybrouck-against-elections.html')
+            +bookCard('История отчуждения', '«Одинокий город» Оливии Лэнг', 'lang-lonely-city.html')
+            +bookCard('Стоицизм — учение будущего?', '«Как быть стоиком» Массимо Пильюччи', 'pigliucchi-stoic.html')

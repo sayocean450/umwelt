@@ -1,0 +1,27 @@
+include ../../components/head/head
+include ../../components/header/header
+include ../../components/article-headline/article-headline
+include ../../components/article-breadcrumb/article-breadcrumb
+
+doctype html
+html
+    +head(
+      'Стоицизм — учение будущего? • «Как быть стоиком» Массимо Пильюччи',
+      'Кажется, книга Массимо Пильюччи вскоре породит новый общественный тренд. Вместо Гоа люди поедут в Грецию',
+      'http://umwelt-books.ru/img/pigliucchi-stoic-og.jpg',
+      'article'
+    )
+body.body_light
+    +header('mini')
+    div.content
+        div.article
+            div.article__text
+                include:markdown-it(plugins=['markdown-it-attrs']) ../../../node_modules/soshnikov-writing/publications/umwelt/site/pigliucchi-stoic.md
+            dic.article__data
+                figure
+                    img(src="http://chernotrop.reviews/img/pigliucchi-stoic-cover.jpg")
+                    figcaption 
+                        p 
+                            a(href="https://ru.wikipedia.org/wiki/%D0%9F%D0%B8%D0%BB%D1%8C%D1%8E%D1%87%D1%87%D0%B8,_%D0%9C%D0%B0%D1%81%D1%81%D0%B8%D0%BC%D0%BE") Массимо Пильюччи
+                        p «Как быть стоиком»
+                        p Альпина нон-фикшн, 2018. 278 с.

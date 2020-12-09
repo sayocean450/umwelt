@@ -14,6 +14,7 @@
   
   @include respond(mobile) {
     @include col100(0 12px, row, flex-start, center);
+    font: $fontMain;
   }
   
   a {
@@ -56,5 +57,10 @@
   &_mini {
     @include col100(24px 48px, row, flex-start, center);
     font: $fontMain;
+
+    @include respond(mobile) {
+      @include col100(0 12px, row, flex-start, center);
+      font: $fontMain;
+    }
   }
 }

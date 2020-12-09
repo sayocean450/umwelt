@@ -1,0 +1,37 @@
+include ../../components/head/head
+include ../../components/header/header
+include ../../components/article-headline/article-headline
+include ../../components/article-breadcrumb/article-breadcrumb
+
+- var id = 'lang-lonely-city'
+- var author = 'Оливия Лэнг'
+- var title = 'Одинокий город'
+- var publisher = '«Ad Marginem + Garage», 2018. 352 с. Переводчица Шаши Мартынова'
+- var headline = 'История отчуждения'
+-  var desc = 'О хорошо написанной истории общественного отчуждения'
+
+doctype html
+html
+    +head(
+      `${headline} • ${author}, «${title}»`,
+      `${desc}`,
+      `http://umwelt-books.ru/img/${id}-og.jpg`,
+      'article'
+    )
+body.body_light
+    +header('mini')
+    div.content
+        div.article
+            div.article__text
+                include:markdown-it(plugins=['markdown-it-attrs']) ../../../node_modules/soshnikov-writing/publications/umwelt/site/lang-lonely-city.md
+            div.article__data
+                figure
+                    img(src=`http://umwelt-books.ru/img/${id}-cover.jpg`)
+                    figcaption 
+                        p 
+                            a(href="https://bookmate.com/authors/PTCehyza")=`${author}`
+                        p 
+                        |«
+                        =`${title}`
+                        |»
+                        p=`${publisher}`

@@ -1,0 +1,27 @@
+include ../../components/head/head
+include ../../components/header/header
+include ../../components/article-headline/article-headline
+include ../../components/article-breadcrumb/article-breadcrumb
+
+doctype html
+html
+    +head(
+      'Такие выборы нам не нужны',
+      'Как выглядит отличное пособие по преодолению неэффективной выборной системы',
+      'http://umwelt-books.ru/img/van-reybrouck-against-elections-og.jpg',
+      'article'
+    )
+body.body_light
+    +header('mini')
+    div.content
+        div.article
+            div.article__text
+                include:markdown-it(plugins=['markdown-it-attrs']) ../../../node_modules/soshnikov-writing/publications/umwelt/site/van-reybrouck-against-elections.md
+            dic.article__data
+                figure
+                    img(src="http://chernotrop.reviews/img/van-reybrouck-against-elections-cover.jpg")
+                    figcaption 
+                        p 
+                            a(href="https://en.wikipedia.org/wiki/David_Van_Reybrouck/") Давид ван Рейбрук
+                        p «Против выборов»
+                        p Ad Marginem + Garage, 2018. 200 с.
