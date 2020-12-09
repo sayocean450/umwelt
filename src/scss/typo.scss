@@ -36,6 +36,6 @@ blockquote {
   margin: 0;
   
   @include respond(mobile) {
-    margin: 4px 12px;
+    margin: 0;
   }
 }
